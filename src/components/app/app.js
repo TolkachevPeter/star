@@ -7,7 +7,12 @@ import ErrorBoundry from '../error-boundry';
 import Row from "../row/row";
 import ItemDetails, { Record } from "../item-details/item-details";
 import SwapiService from "../../services/swapi-service";
-import { PeoplePage, PlanetPage, StarshipsPage } from '../pages';
+import { 
+        PeoplePage, 
+        PlanetPage, 
+        StarshipsPage,
+        SecretPage,
+        LoginPage } from '../pages';
 
 import {
   SwapiServiceProvider, 
@@ -24,10 +29,20 @@ export default class App extends Component {
   swapiService = new SwapiService();
 
   state = {
+    isLoggedIn: false
+  };
+
+  onLogin = () => {
+    this.setState({
+      isLoggedIn: true
+    })
   };
 
 
   render() {
+    
+    const { isLoggedIn } = this.state;
+
     return (
       <ErrorBoundry>
         <SwapiServiceProvider value={this.swapiService} >
@@ -36,16 +51,34 @@ export default class App extends Component {
         <Header />
         <RandomPlanet/>
 
+        <Route
+                  path="/login"
+                  render={() => (
+                    <LoginPage
+                      isLoggedIn={isLoggedIn}
+                      onLogin={this.onLogin}/>
+                  )}/>
+
           <Route path='/' render={() => <h2>Welcome to StarDB</h2>} exact />
           <Route path='/people' render={() => <h2>People</h2>} exact />
           <Route path='/people/:id?' component={PeoplePage} />
           <Route path='/planets' component={PlanetPage} />
+
+          {/* <Route path='/login' component={LoginPage} /> */}
+
           <Route path='/starships' component={StarshipsPage} exact />
           <Route path='/starships/:id'
                  render={({ match }) => {
                   const { id } = match.params;
                  return <StarshipDetails itemId={ id } />
                 }}/>
+
+          <Route 
+          path='/secret'
+          render={()=>(
+            <SecretPage isLoggedIn={isLoggedIn} />
+          )} />
+
         </div>
         </Router>
         </SwapiServiceProvider>
