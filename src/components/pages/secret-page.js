@@ -7,7 +7,7 @@ const SecretPage = ({ isLoggedIn }) => {
         return(
             <div className = 'jumbotron text-center'>
                 <h3>This page is secret page ^_^</h3>
-                <h4>Предложения о работе можно отправлять по этой почте peter.tolkachev@gmail.com</h4>
+                <h4>Job offers can be sent to this mail: peter.tolkachev@gmail.com</h4>
             </div>
         );
     }
