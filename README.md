@@ -7,3 +7,4 @@
 https://www.star.tolkachev.site/
 
 
+<img align="left" alt="star" width="200px" src="https://prnt.sc/vq31wl" />
