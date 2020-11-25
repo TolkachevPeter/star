@@ -1,8 +1,6 @@
 # Star Wars Database
 Учебный проект на React. Целью было научиться писать на реакте и подгружать асинхронные данные с API. Для этого использовал swapi.co
 
-Посмотреть можно здесь: https://www.star.tolkachev.site/
+В проекте используются следующие технологии: JSX, props, hooks, cостояние и жизненный цикл компонента, Error Boundaries, Higher-Order Components и т.д.
 
-## Запуск
-    npm init
-    npm run start
+Посмотреть можно здесь: https://www.star.tolkachev.site/
