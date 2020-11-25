@@ -32,7 +32,7 @@ export default class App extends Component {
 
   onLogin = () => {
     this.setState({
-      isLoggedIn: true
+      isLoggedIn: true,
     })
   };
 

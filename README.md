@@ -3,8 +3,4 @@
 
 В проекте используются следующие технологии: JSX, props, hooks, cостояние и жизненный цикл компонента, Error Boundaries, Higher-Order Components и т.д.
 
-Посмотреть демо можно здесь: https://tolkachevpeter.github.io/star/
-
-## Запуск
-    npm init
-    npm run start
+Посмотреть можно здесь: https://www.star.tolkachev.site/
