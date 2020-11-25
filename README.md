@@ -6,5 +6,4 @@
 ## Посмотреть можно здесь: 
 https://www.star.tolkachev.site/
 
-<iframe src="https://www.star.tolkachev.site/" title="starDB">
-</iframe>
+
