@@ -3,6 +3,6 @@
 
 В проекте используются следующие технологии: JSX, props, hooks, cостояние и жизненный цикл компонента, Error Boundaries, Higher-Order Components и т.д.
 
-## Посмотреть можно здесь: 
+## Посмотреть можно здесь (временно отключено): 
 https://www.star.tolkachev.site/
 
