@@ -8,4 +8,4 @@ https://www.star.tolkachev.site/
 
 или тут
 
-https://tolkachevpeter.github.io/
+https://tolkachevpeter.github.io/star/
