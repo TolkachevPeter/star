@@ -6,3 +6,6 @@
 ## Посмотреть можно здесь (временно отключено): 
 https://www.star.tolkachev.site/
 
+или тут
+
+https://tolkachevpeter.github.io/
